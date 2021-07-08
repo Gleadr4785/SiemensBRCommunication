@@ -1,0 +1,13 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Visualisat 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                       DatObjInfo_Config                               DatObjInfo    0 "                                                               *"    0   24    1    0    1    1         
+                                  enable                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   pName                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                  status                                     UINT    0 "                                                               0"    1    6    1   10    0    0         
+                                   ident                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                              pDatObjMem                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                     len                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                 MemType                                    USINT    0 "                                                               0"    1    5    1   10    0    0         
+                                  Option                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                              ChangeDate                            DATE_AND_TIME    0 "                                          DT#1970-01-01-00:00:00"    1   11    1    1    0    0         

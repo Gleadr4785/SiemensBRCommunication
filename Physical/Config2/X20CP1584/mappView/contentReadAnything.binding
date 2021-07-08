@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="contentReadAnything_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:variableAddress" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentReadAnything" widgetRefId="numberAdr" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:variableDB" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentReadAnything" widgetRefId="numberDB" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Visual:variableVal" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentReadAnything" widgetRefId="numberReaded" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

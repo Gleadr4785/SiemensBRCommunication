@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="mainVis" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="digitalPage" />
+	<Pages>
+		<Page refId="digitalPage"/>
+		<Page refId="analogPage"/>
+		<Page refId="readAnythingPage"/>
+		<Page refId="statusPage"/>
+  </Pages>
+  <Navigations>
+    <!--<Navigation refId="navigation" />-->
+  </Navigations>  
+  <BindingsSets>
+		<BindingsSet refId="contentStatus_binding" />
+		<BindingsSet refId="contentDigital_binding" />
+		<BindingsSet refId="contentAnalog_binding" />
+		<BindingsSet refId="contentReadAnything_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+		<EventBindingsSet refId="contentStatus_eventbinding" />
+		<EventBindingsSet refId="contentReadAnything_eventbinding" />
+	</EventBindingsSets>
+  <Dialogs>
+    <!--<Dialog refId="" />-->
+  </Dialogs>
+  <Contents>
+    <!--<Content refId="" />-->
+  </Contents>
+  <SnippetsSets>
+    <!--<SnippetsSet refId=""/>-->
+  </SnippetsSets>
+  <ExpressionsSets>
+    <!--<ExpressionsSet refId=""/>-->
+  </ExpressionsSets>
+  <VariablesSets>
+    <!--<VariablesSet refId="" />-->
+  </VariablesSets>
+	<Configurations>
+		<Configuration key="activityCount" value="false" />
+		<Configuration key="zoom" value="true" />
+	  <Gestures>
+		  <!--<SystemGesture1 touchPoints="2" />
+		  <SystemGesture2 touchPoints="2" />
+		  <SystemGesture3 touchPoints="2" />-->
+	  </Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards> 
+	</Configurations>
+	
+</vdef:Visualization>

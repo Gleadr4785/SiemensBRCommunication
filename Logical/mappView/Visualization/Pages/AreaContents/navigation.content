@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="navigation" height="350" width="150" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" width="140" height="400" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="100" left="15" width="120" height="60" zIndex="0" pageId="analogPage" text="analog" cornerRadius="10px" borderColor="rgba(91, 124, 112, 0)" checkedBackColor="rgba(255, 136, 0, 1)" checkedBorderColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="260" left="15" width="120" height="60" zIndex="1" pageId="statusPage" text="status" cornerRadius="10px" borderColor="rgba(91, 124, 112, 0)" checkedBackColor="rgba(255, 136, 0, 1)" checkedBorderColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton3" top="20" left="15" width="120" height="60" zIndex="2" pageId="digitalPage" text="digital" cornerRadius="10px" borderColor="rgba(91, 124, 112, 0)" checkedBackColor="rgba(255, 136, 0, 1)" checkedBorderColor="rgba(0, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="180" left="15" width="120" height="60" zIndex="3" pageId="readAnythingPage" text="read anything" cornerRadius="10px" borderColor="rgba(91, 124, 112, 0)" checkedBackColor="rgba(255, 136, 0, 1)" checkedBorderColor="rgba(0, 0, 0, 1)" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,0 +1,27 @@
+(*----------------------    DavNoDave FBKs    ----------------------*)
+VAR
+	DAVInitialize : DAVinitialize;
+	DAVConnect : DAVconnect;
+	DAVClient : DAVclient;
+	DAVDisconnect : DAVdisconnect;
+END_VAR
+(*-------------------------------------------------------------------*)
+(*---------------------- Controlling commands ----------------------*)
+VAR
+	cmdDisconnect : BOOL; (*Command for disconnecting from Siemens' PLC*)
+	cmdConnect : BOOL; (*Command for connecting to Siemens's PLC*)
+END_VAR
+(*-------------------------------------------------------------------*)
+(*----------------------Communication variables----------------------*)
+VAR
+	strSiemensIP : STRING[20] := '10.42.10.225'; (*Ip address of target Siemen's PLC*)
+	CommunicationStatus : comunicationStatus; (*Communication status*)
+END_VAR
+(*-------------------------------------------------------------------*)
+(*----------------------      Mapped I/O       ----------------------*)
+VAR
+	byteOutput : BYTE; (*Output byte*)
+	wRamp : WORD; (*Input Word*)
+	byteInput : BYTE; (*Input Byte*)
+END_VAR
+(*-------------------------------------------------------------------*)

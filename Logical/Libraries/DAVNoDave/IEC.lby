@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="1.04.0" SubType="IEC" Description="A library based on LibNoDave to connect to a Siemens PLC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported functions and function blocks">DAVNoDave.fun</File>
+    <File Description="Exported data types">DAVNoDave.typ</File>
+    <File Description="Exported constants">DAVNoDave.var</File>
+    <File Description="Initializes data object(s) for servicing communications">DAVinitialize.st</File>
+    <File Description="Connects / Disconnects to a PLC">DAVconnection.st</File>
+    <File Description="Services communcations between a B&amp;R and Siemens PLC">DAVclient.st</File>
+    <File Description="Exchanges data between PLC's">DAVexchange.st</File>
+    <File Description="Creates packets for exchanging data">DAVpackets.st</File>
+    <File Description="Internal functions">DAVinternal.st</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="AsTCP" />
+    <Dependency ObjectName="DataObj" />
+    <Dependency ObjectName="sys_lib" />
+    <Dependency ObjectName="dvframe" />
+    <Dependency ObjectName="asstring" />
+  </Dependencies>
+</Library>

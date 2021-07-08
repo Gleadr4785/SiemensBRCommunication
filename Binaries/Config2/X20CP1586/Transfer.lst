@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="C4.83"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="Visual.br"/>
+  <Operation Delete="comSIMATIC.br"/>
+  <Operation Delete="mvLoader.br"/>
+  <Operation Delete="DAVNoDave.br"/>
+  <Operation Delete="AsMem.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="dataobj.br"/>
+  <Operation Delete="AsTCP.br"/>
+  <Operation Delete="AsIecCon.br"/>
+  <Operation Delete="dvframe.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Delete="fileio.br"/>
+  <Operation Delete="arssl.br"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="FWRules.br" Memory="UserROM"/>
+  <Operation Download="udbdef.br" Memory="UserROM"/>
+  <Operation Download="TCData.br" Memory="SystemROM"/>
+  <Operation Download="User.br" Memory="UserROM"/>
+  <Operation Download="Role.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="ashwac.br" Memory="UserROM"/>
+  <Operation Download="asstring.br" Memory="UserROM"/>
+  <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="arssl.br" Memory="UserROM"/>
+  <Operation Download="fileio.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="dvframe.br" Memory="UserROM"/>
+  <Operation Download="AsIecCon.br" Memory="UserROM"/>
+  <Operation Download="AsTCP.br" Memory="UserROM"/>
+  <Operation Download="dataobj.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="AsMem.br" Memory="UserROM"/>
+  <Operation Download="DAVNoDave.br" Memory="UserROM"/>
+  <Operation Download="mvLoader.br" Memory="UserROM"/>
+  <Operation Download="comdvmap.br" Memory="UserROM"/>
+  <Operation Download="comdvcfg.br" Memory="UserROM"/>
+  <Operation Download="comSIMATIC.br" Memory="UserROM"/>
+  <Operation Download="Visual.br" Memory="UserROM"/>
+</Transfer>

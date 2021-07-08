@@ -1,0 +1,3 @@
+"1,0,R,D,1,0,0,1,Com:byteInput" 	(* read From Siemens DB*)
+"1,0,R,D,10,0,0,2,Com:wRamp"		(* read From Siemens DB *)
+"1,0,W,D,1,1,0,1,Com:byteOutput" 	(* write to Diemens DB *)

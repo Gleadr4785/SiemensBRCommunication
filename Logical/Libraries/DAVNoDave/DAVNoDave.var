@@ -1,0 +1,108 @@
+(********************************************************************
+ * COPYRIGHT -- B&R Industrial Automation
+ ********************************************************************
+ * Library: DAVNoDave
+ * File: DAVNoDave.var
+ * Author: morrisd
+ * Created: May 26, 2009
+ ********************************************************************
+ * Constants of library DAVNoDave
+ ********************************************************************)
+(**)
+(*Internal*)
+VAR CONSTANT
+	DAV_DEFAULT_BUFFER_R : UINT := 500; (*Default read buffer size, should be more than PDU size*)
+	DAV_DEFAULT_BUFFER_W : UINT := 500; (*Default write buffer size, should be more than PDU size*)
+END_VAR
+(**)
+(*Default values*)
+VAR CONSTANT
+	DAV_DEFAULT_SOURCE_PORT : UINT := 60000; (*Default source port (should be >=49152)*)
+	DAV_DEFAULT_PORT : UINT := 102; (*Default connection port*)
+	DAV_DEFAULT_MPI : STRING[40] := '/PHY=RS232 /BD=38400 /PA=O /DB=8 /SB=1'; (*Default connection for MPI*)
+	DAV_DEFAULT_TIMEOUT : UINT := 0; (*Default timeout (1500ms for ISO/TCP, 5000ms for MPI)*)
+END_VAR
+(**)
+(*Configuration*)
+VAR CONSTANT
+	DAV_CONFIG_MAX_LINES : UINT := 500; (*Maximum number of lines in the configuration file*)
+	DAV_CONFIG_PRIOIRTY_MAX : USINT := 5; (*Prioirty level (maximum)*)
+	DAV_CONFIG_RW_B : USINT := 2; (*Access level (read / write)*)
+	DAV_CONFIG_RW_R : USINT := 1; (*Access level (read only)*)
+	DAV_CONFIG_RW_W : USINT := 3; (*Access level (write only)*)
+END_VAR
+(**)
+(*Protocol*)
+VAR CONSTANT
+	DAV_PROTOCOL_TCP : USINT := 100; (*Connection type - ISOTCP*)
+	DAV_PROTOCOL_MPI : USINT := 200; (*Connection type - MPI*)
+END_VAR
+(**)
+(*Protocol - Speed*)
+VAR CONSTANT
+	DAV_SPEED_9K : USINT := 0; (*MPI Adapter speed - 9k baud*)
+	DAV_SPEED_19K : USINT := 1; (*MPI Adapter speed - 19k baud*)
+	DAV_SPEED_187K : USINT := 2; (*MPI Adapter speed - 187k baud*)
+	DAV_SPEED_500K : USINT := 3; (*MPI Adapter speed - 500k baud*)
+	DAV_SPEED_1500K : USINT := 4; (*MPI Adapter speed - 1500k baud*)
+	DAV_SPEED_45K : USINT := 5; (*MPI Adapter speed - 45k baud*)
+	DAV_SPEED_93K : USINT := 6; (*MPI Adapter speed - 93k baud*)
+END_VAR
+(**)
+(*PDU Constants*)
+VAR CONSTANT
+	DAV_PDU_SIZE : UINT := 240; (*PDU size*)
+END_VAR
+(**)
+(*Variables*)
+VAR CONSTANT
+	DAV_VAR_BIT : USINT := 1; (*Read a single bit*)
+	DAV_VAR_BYTE : USINT := 2; (*Read a byte*)
+	DAV_VAR_WORD : USINT := 4; (*NOT IMPLEMENTED Read a word*)
+END_VAR
+(**)
+(*DataBlock's and Area*)
+VAR CONSTANT
+	DAV_AREA_COUNTER : USINT := 28; (*NOT IMPLEMENTED Area type, S7 Counters*)
+	DAV_AREA_DB : USINT := 132; (*Area type, DataBlocks*)
+	DAV_AREA_DI : USINT := 133; (*NOT IMPLEMENTED Area type, DataBlock Instance*)
+	DAV_AREA_FLAG : USINT := 131; (*Area type, Flags*)
+	DAV_AREA_INPUT : USINT := 129; (*Area type, Inputs*)
+	DAV_AREA_LOCAL : USINT := 134; (*NOT IMPLEMENTED Area type, Local (not tested)*)
+	DAV_AREA_OUTPUT : USINT := 130; (*Area type, Outputs*)
+	DAV_AREA_PERIPHERAL : USINT := 128; (*NOT IMPLEMENTED Area type, Peripherals*)
+	DAV_AREA_TIMER : USINT := 29; (*NOT IMPLEMENTED Area type, S7 Timers*)
+END_VAR
+(**)
+(*Error codes*)
+VAR CONSTANT
+	DAV_ERR_INITIALIZATION : UINT := 51000; (*Initialization error*)
+	DAV_ERR_HANDLE : UINT := 51001; (*Invalid handle specified*)
+	DAV_ERR_BUFFER : UINT := 51002; (*Invalid buffer specified*)
+	DAV_ERR_BUFFER_SIZE : UINT := 51003; (*Invalid buffer size specified*)
+	DAV_ERR_CONNECT_OPEN : UINT := 51004; (*Connection already open*)
+	DAV_ERR_CONNECT_CLOSED : UINT := 51005; (*Connection already closed*)
+	DAV_ERR_CONNECT_PROTOCOL : UINT := 51006; (*Invalid connection mode specidied*)
+	DAV_ERR_CONNECT_TARGETIP : UINT := 51007; (*Invalid target IP specified*)
+	DAV_ERR_CONNECT_INTERFACE : UINT := 51008; (*Invalid interface specified*)
+	DAV_ERR_CONNECT_TCP : UINT := 51009; (*Can not connect to specified TCP/IP address*)
+	DAV_ERR_SEND_MISSINGDATA : UINT := 51010; (*Not all the data was sent*)
+	DAV_ERR_SEND_NODATA : UINT := 51011; (*Invalid send length*)
+	DAV_ERR_SEND_BUFFERSIZE : UINT := 51012; (*Buffer size too small*)
+	DAV_ERR_RECV_NODATA : UINT := 51020; (*No data received - client disconnect?*)
+	DAV_ERR_RECV_MISSINGDATA : UINT := 51021; (*Not all the data was received*)
+	DAV_ERR_RECV_WRONGPACKET : UINT := 51022; (*Wrong packet received*)
+	DAV_ERR_RECV_BUFFERSIZE : UINT := 51023; (*Buffer size too small*)
+	DAV_ERR_RECV_PROTOCOL : UINT := 51024; (*MPI protocol error*)
+	DAV_ERR_RECV_RESPONSE : UINT := 51025; (*MPI response*)
+	DAV_ERR_FAILED_READ : UINT := 51027; (*Failed to read data*)
+	DAV_ERR_FAILED_WRITE : UINT := 51028; (*Failed to write data*)
+	DAV_ERR_TIMEOUT : UINT := 51029; (*Timeout occured*)
+	DAV_ERR_CFG_DONAME : UINT := 51030; (*Invalid configuration specified*)
+	DAV_ERR_CFG_DONODATA : UINT := 51031; (*Invalid configuration data (none available)*)
+	DAV_ERR_CFG_INVALID : UINT := 51032; (*Invalid configuration data*)
+	DAV_ERR_CFG_MAXLINES : UINT := 51033; (*Invalid number of lines specified*)
+	DAV_ERR_CFG_TIMEOUT : UINT := 51034; (*Execution too long*)
+	DAV_ERR_MPI_ADAPTER : UINT := 51040; (*Unsupported MPI adapter*)
+	DAV_ERR_ACKNOWLEDGE : UINT := 51041;
+END_VAR

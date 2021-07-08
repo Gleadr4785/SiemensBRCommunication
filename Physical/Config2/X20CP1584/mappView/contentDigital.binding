@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="contentDigital_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:input1" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="indicator1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:input2" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="indicator2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:input3" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="indicator4" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Visual:switch_Output1" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output2" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output3" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output4" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output5" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output6" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output7" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output8" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output9" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output10" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output11" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output11" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+	<Source xsi:type="opcUa" refId="::Visual:switch_Output12" attribute="value" />
+	<Target xsi:type="brease" contentRefId="contentDigital" widgetRefId="output12" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="contentStatus_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Visual:communicationStatusStr" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentStatus" widgetRefId="TextOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::comSIMATIC:btnConnectEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentStatus" widgetRefId="Button1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::comSIMATIC:btnDisconnectEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="contentStatus" widgetRefId="Button2" attribute="enable" />
+</Binding>
+</Bindings>
+</BindingsSet>

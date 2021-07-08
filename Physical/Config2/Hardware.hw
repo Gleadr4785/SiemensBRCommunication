@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.10.2.37 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1584" Type="X20CP1584" Version="1.9.0.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.3" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="Operation" Value="EthOnly" />
+      <Parameter ID="EthernetMode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="10.42.10.220" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="komunikaceSIMATIC_Config2" />
+    <Parameter ID="UserPartitionSize" Value="100" />
+    <Parameter ID="AutomaticTransferOfUserfiles" Value="on" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="Flashcard" />
+    <Parameter ID="FileDevicePath1" Value="C:\" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="admin" />
+    <Parameter ID="FtpUserPassword1" Value="b1OGEwZ56wPH8RQzCv5cMjA1xEZ3AQeIlDvIGC2uv18=" />
+    <Parameter ID="FtpUserSalt1" Value="TsE2z1/6" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+</Hardware>

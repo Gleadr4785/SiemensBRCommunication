@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="contentDigital" height="380" width="650" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="0" width="660" height="40" zIndex="0" text="Digital inputs and outputs" textColor="rgba(105, 111, 111, 1)" textAlign="center" fontSize="26px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="120" left="20" width="180" height="40" zIndex="1" text="Digital input 1:" textColor="rgba(105, 111, 111, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="180" left="20" width="180" height="40" zIndex="2" text="Digital input 2:" textColor="rgba(105, 111, 111, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="240" left="20" width="180" height="40" zIndex="3" text="Digital input 3:" textColor="rgba(105, 111, 111, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse1" top="120" left="180" width="40" height="40" zIndex="4" backColor="rgba(100, 100, 100, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse2" top="180" left="180" width="40" height="40" zIndex="5" backColor="rgba(100, 100, 100, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse3" top="240" left="180" width="40" height="40" zIndex="6" backColor="rgba(100, 100, 100, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="indicator1" top="120" left="180" width="40" height="40" zIndex="7" backColor="rgba(255, 106, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="indicator2" top="180" left="180" width="40" height="40" zIndex="8" backColor="rgba(255, 106, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="indicator4" top="240" left="180" width="40" height="40" zIndex="9" backColor="rgba(255, 106, 0, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="60" left="320" width="300" height="40" zIndex="10" text="Digital outputs:" textColor="rgba(105, 111, 111, 1)" textAlign="center" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output1" top="100" left="380" width="80" zIndex="11" text="1" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output2" top="100" left="480" width="80" zIndex="12" text="2" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output3" top="140" left="380" width="80" zIndex="13" text="3" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output4" top="140" left="480" width="80" zIndex="14" text="4" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output5" top="180" left="380" width="80" zIndex="15" text="5" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output6" top="180" left="480" width="80" zIndex="16" text="6" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output7" top="220" left="380" width="80" zIndex="17" text="7" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output8" top="220" left="480" width="80" zIndex="18" text="8" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output9" top="260" left="380" width="80" zIndex="19" text="9" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output10" top="260" left="480" width="80" zIndex="20" text="10" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output11" top="300" left="380" width="80" zIndex="21" text="11" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="output12" top="300" left="480" width="80" zIndex="22" text="12" cornerRadius="10px" mouseDownBackColor="rgba(255, 120, 0, 1)" />
+  </Widgets>
+</Content>

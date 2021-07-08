@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="contentReadAnything" height="380" width="650" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="80" left="0" width="640" zIndex="0" value="You can enter here custom address and read value from it." textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="18px" />
+    <Widget xsi:type="widgets.brease.Button" id="btnRead" top="240" left="200" width="260" height="60" zIndex="1" text="read" cornerRadius="10px" borderColor="rgba(91, 124, 112, 0)" mouseDownBorderColor="rgba(0, 0, 0, 1)" mouseDownBackColor="rgba(255, 136, 0, 1)" fontSize="18px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="0" width="660" height="40" zIndex="2" text="Read anything from Siemens PLC" textColor="rgba(105, 111, 111, 1)" textAlign="center" fontSize="26px" bold="true" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numberDB" top="120" left="219" zIndex="3" maxValue="65535" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numberAdr" top="120" left="380" zIndex="4" maxValue="65535" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="120" left="160" width="60" zIndex="5" value="DB:" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="18px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="120" left="320" width="60" zIndex="6" value="adr.:" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="18px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numberReaded" top="200" left="280" zIndex="7" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="160" left="0" width="660" zIndex="8" text="Value from SIEMENS PLC:" textAlign="center" fontSize="18px" />
+  </Widgets>
+</Content>
