@@ -105,7 +105,7 @@ PROGRAM _CYCLIC
 END_PROGRAM
 
 PROGRAM _EXIT
-	(* Insert code here *)
+	//Disconnect from Siemens's PLC
 	DAVDisconnect.enable:=    TRUE;                     // Enable the function block
 	DAVDisconnect.pHandle:=   DAVInitialize.handle;	    // Configuration handle
 	DAVDisconnect();									// Service the function block
